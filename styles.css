@@ -1,0 +1,164 @@
+/* --- RESET GERAL E ESTILOS BASE (MOBILE FIRST) --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- CONTAINER E LAYOUT PRINCIPAL --- */
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 90%;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* --- CABEÇALHO E TÍTULO --- */
+header.cabecalho {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Regra adicionada para centralizar a imagem do cabeçalho */
+header.cabecalho img {
+  display: inline-block;
+}
+
+.titulo1 {
+  background-color: rgb(254, 255, 255);
+  border-radius: 40px;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: black;
+}
+
+header.cabecalho figure {
+  margin-top: 1.5rem;
+}
+
+.figcap {
+  color: white;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* --- SEÇÕES DE CONTEÚDO E TEXTO --- */
+.introducao,
+.biografia,
+.info-extra {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+/* --- CENTRALIZAÇÃO DAS IMAGENS DE DESTAQUE --- */
+.imagem-destaque {
+  display: block;
+  width: 85%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(150, 144, 144);
+  border: 1px solid #555;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+}
+
+.imagem-destaque figcaption {
+  border-top: 1px solid #555;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Centraliza a IMAGEM dentro da FIGURE de destaque */
+.imagem-destaque img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- LISTAS E RODAPÉ --- */
+.info-extra ul {
+  list-style-position: inside;
+  text-align: center;
+  padding-left: 0;
+}
+
+.info-extra li {
+  margin-bottom: 0.5rem;
+}
+
+footer.final-especial {
+  background-color: black;
+  color: aliceblue;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+footer.final-especial a {
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+/* ======================================================= */
+/* MEDIA QUERY - AJUSTES PARA TELAS MAIORES               */
+/* ======================================================= */
+@media (min-width: 768px) {
+  .container {
+    padding: 2.5rem;
+  }
+
+  .titulo1 {
+    font-size: 2rem;
+  }
+
+  .introducao,
+  .biografia,
+  .info-extra ul {
+    text-align: left;
+  }
+}
